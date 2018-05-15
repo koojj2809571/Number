@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Number</string>
+
+    <string name="level_list_title">选择关卡</string>
+    <string name="wel_four_x_four">开始4X4练习模式</string>
+    <string name="wel_twenty_x_twenty">开始20X20练习模式</string>
+    <string name="wel_random">开始随机模式</string>
+    <string name="wel_level">开始关卡模式</string>
+    <string name="wel_setting">设置</string>
+    <string name="clear_database">清空数据库</string>
+</resources>

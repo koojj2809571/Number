@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/colorBG"
+    tools:context=".ui.activity.WelcomeActivity">
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/wel_bt_start_random_game"
+        android:gravity="center"
+        android:background="@drawable/button_style"
+        android:elevation="10dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/wel_random"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/wel_bt_start_level_game"
+        android:gravity="center"
+        android:background="@drawable/button_style"
+        android:elevation="10dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/wel_level"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/wel_bt_setting"
+        android:gravity="center"
+        android:background="@drawable/button_style"
+        android:elevation="10dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/clear_database"/>
+
+</LinearLayout>

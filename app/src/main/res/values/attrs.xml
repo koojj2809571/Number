@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BlockNumberView">
+        <attr name="lineNumber" format="integer"/>
+        <attr name="halfBlockWidth" format="dimension"/>
+        <attr name="blockInterval" format="dimension"/>
+        <attr name="blockBackColor" format="color"/>
+        <attr name="blockColor" format="color"/>
+    </declare-styleable>
+</resources>

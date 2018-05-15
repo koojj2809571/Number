@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#edb2b2"
+    tools:context="com.opp.number.ui.activity.GameActivity">
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/head_corner"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="#edb2b2"
+        android:clipChildren="false">
+
+        <com.opp.number.widget.BlockView
+            android:id="@+id/block_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:blockBackColor="#ffffff"
+            app:blockColor="#b1a4a4a4"
+            app:blockInterval="5dp"
+            app:lineNumber="30" />
+
+    </LinearLayout>
+
+</LinearLayout>
