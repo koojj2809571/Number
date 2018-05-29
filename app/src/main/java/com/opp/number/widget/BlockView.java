@@ -338,7 +338,8 @@ public class BlockView extends View {
 //                }
 
                 if(mCanScroll){
-                    if ((currentTouchBlock.getLineColor() == 0 && currentTouchBlock.getBlockCount() == 0 && currentTouchBlock.getTotalMoveCount() == 0)
+                    if ((currentTouchBlock.getLineColor() == 0 && currentTouchBlock.getBlockCount() == 0
+                            && currentTouchBlock.getTotalMoveCount() == 0)
                             || (currentTouchBlock.isConnected() && currentTouchBlock.isConnecting())
                             || (!currentTouchBlock.isConnected() && currentTouchBlock.isConnecting())){
                         mScrollOrConnection = true;

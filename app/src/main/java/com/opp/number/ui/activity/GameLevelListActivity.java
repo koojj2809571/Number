@@ -141,9 +141,7 @@ public class GameLevelListActivity extends AppCompatActivity {
                     Log.d(TAG, "run: 无法获取数据设置");
                     getInitDataFromBmob();
                 } else {
-                    Message msg1 = new Message();
-                    msg1.what = 1;
-                    mHandler.sendMessage(msg1);
+                    mHandler.obtainMessage(1);
                     getInitDataFromBmob();
                     int count = mBmobSettings.size() - mDatabaseSettings.size();
                     if (count > 0){
@@ -156,13 +154,9 @@ public class GameLevelListActivity extends AppCompatActivity {
                                 e.printStackTrace();
                             }
                         }
-                        Message msg3 = new Message();
-                        msg3.what = 3;
-                        mHandler.sendMessage(msg3);
+                        mHandler.obtainMessage(3);
                     }else if (count == 0){
-                        Message msg4 = new Message();
-                        msg4.what = 4;
-                        mHandler.sendMessage(msg4);
+                        mHandler.obtainMessage(4);
                     }
                 }
             }
@@ -178,9 +172,7 @@ public class GameLevelListActivity extends AppCompatActivity {
             public void done(List<LevelSetting> list, BmobException e) {
                 if (e == null) {
                     mBmobSettings = list;
-                    Message msg2 = new Message();
-                    msg2.what = 2;
-                    mHandler.sendMessage(msg2);
+                    mHandler.obtainMessage(2);
                 } else {
                     Log.e(TAG, "done: " + e.toString());
                 }
